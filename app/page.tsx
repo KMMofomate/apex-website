@@ -105,7 +105,7 @@ export default function Home() {
                 src={src} 
                 alt="Apex Training" 
                 fill 
-                sizes="(max-width: 768px) 100vw, 33vw"// add this line
+                sizes="(max-width: 768px) 100vw, 33vw"
                 className="object-contain p-2"
               />
             </div>
