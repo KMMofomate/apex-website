@@ -1,6 +1,8 @@
-import Image from "next/image";
+import React from 'react';
+import Link from 'next/link';
+import Image from 'next/image';
 
-export default function Home() {
+export default function ThankYou() {
   const trainingGallery = [
     { src: "/images/bls-manual.png", alt: "BLS Provider Manual" },
     { src: "/images/first-aid1.png", alt: "First Aid Kit" },
@@ -11,59 +13,59 @@ export default function Home() {
   const specializationList = [
     {
       title: "First Aid Training",
-      items: ["Level 1-3", "BLS (Basic Life Support)", "Family and Friends", "CPR for Professionals"]
+      items: ["Level 1-3", "BLS (Basic Life Support)", "Family and Friends"]
     },
     {
       title: "Health and Safety",
-      items: ["Basic OHS Training", "Fire Fighting", "Risk Assessment", "Working at Heights", "Incident Investigation", "Consultation Services"]
-    },
-    {
-      title: "Digital Services",
-  …
-import Image from 'next/image';
-import Link from 'next/link';
+      items: ["Basic OHS Training", "Fire Fighting", "Risk Assessment"]
+    }
+  ];
 
-export default function ThankYou() {
   return (
-    <main className="min-h-screen bg-white flex flex-col items-center justify-center px-6 text-center">
-      {/* Success Icon or Logo */}
-      <div className="mb-8">
-        <Image 
-          src="/images/logo.png" 
-          alt="Apex Technical Group Logo" 
-          width={180} 
-          height={100} 
-          className="mx-auto"
-        />
-      </div>
-
-      <div className="max-w-md">
-        <div className="w-20 h-20 bg-green-100 text-green-600 rounded-full flex items-center justify-center mx-auto mb-6">
-          <svg xmlns="http://www.w3.org/2000/svg" className="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
-          </svg>
+    <main className="min-h-screen bg-white flex flex-col items-center justify-center p-6 text-center">
+      <div className="max-w-2xl w-full space-y-8">
+        {/* Success Header */}
+        <div className="space-y-4">
+          <div className="bg-green-100 text-green-600 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" className="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+            </svg>
+          </div>
+          <h1 className="text-4xl font-bold text-gray-900">Registration Received!</h1>
+          <p className="text-xl text-gray-600">
+            Thank you for choosing Apex Technical Group and Training. We have received your details and will contact you shortly to finalize your booking.
+          </p>
         </div>
-        
-        <h1 className="text-3xl font-bold text-slate-900 mb-4">Registration Received!</h1>
-        <p className="text-slate-600 mb-10 leading-relaxed">
-          Thank you for choosing Apex Technical Group. We have received your details and will contact you shortly to confirm your booking and payment details.
-        </p>
 
-        <div className="flex flex-col gap-4">
+        {/* Training Highlights Gallery */}
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 py-8">
+          {trainingGallery.map((img, index) => (
+            <div key={index} className="relative h-32 w-full rounded-lg overflow-hidden border border-gray-200">
+              <Image 
+                src={img.src} 
+                alt={img.alt} 
+                fill 
+                className="object-cover"
+              />
+            </div>
+          ))}
+        </div>
+
+        {/* WhatsApp & Home Actions */}
+        <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
           <Link 
-            href="/" 
-            className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-full transition-all"
-          >
-            Return to Home
-          </Link>
-          
-          <a 
             href="https://wa.me/27789238510" 
             target="_blank"
-            className="text-green-600 font-semibold hover:text-green-700 flex items-center justify-center gap-2"
+            className="bg-green-500 hover:bg-green-600 text-white px-8 py-3 rounded-lg font-semibold transition-colors flex items-center justify-center gap-2"
           >
-            <span>Need urgent help? Chat on WhatsApp</span>
-          </a>
+            <span>Chat on WhatsApp</span>
+          </Link>
+          <Link 
+            href="/" 
+            className="bg-blue-900 hover:bg-blue-800 text-white px-8 py-3 rounded-lg font-semibold transition-colors"
+          >
+            Back to Home
+          </Link>
         </div>
       </div>
     </main>

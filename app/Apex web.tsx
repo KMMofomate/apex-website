@@ -34,7 +34,7 @@ export default function Home() {
         <h2 className="text-3xl font-extrabold mb-6">Professional Compliance & Digital Solutions</h2>
         <p className="text-lg text-slate-700 leading-relaxed">
           Based in Midrand, <strong>Apex Technical Group and Training</strong> provides accredited 
-          on-site safety training, psychological wellness consultations, and specialized web infrastructure 
+          on-site safety training, medical aid claims assistance, and specialized web infrastructure 
           to ensure your business is compliant, resilient, and tech-ready.
         </p>
       </section>
@@ -100,7 +100,7 @@ export default function Home() {
         <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
           {["/images/safety.png", "/images/bls-manual.png", "/images/first-aid1.png", "/images/first-aid2.png", "/images/we-can-do-it.png", "/images/psychology.png"].map((src, i) => (
             <div key={i} className="relative aspect-video rounded-xl overflow-hidden border border-slate-200 bg-slate-50 shadow-sm hover:shadow-md transition-all">
-              <Image src={src} alt="Apex Training" fill size="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-contain p-2" />
+              <Image src={src} alt="Apex Training" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-contain p-2" />
             </div>
           ))}
         </div>
