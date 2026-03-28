@@ -1,11 +1,11 @@
-[18:17, 28/03/2026] Apex Technical group and training: import Image from "next/image";
+import Image from "next/image";
 
 export default function Home() {
   const trainingGallery = [
-    { src: "/images/129550.jpg", alt: "BLS Provider Manual" },
-    { src: "/images/129547.jpg", alt: "First Aid Kit" },
-    { src: "/images/129543.jpg", alt: "Health Safety Environment" },
-    { src: "/images/129542.jpg", alt: "Anatomical Heart Study" }
+    { src: "/images/bls-manual.png", alt: "BLS Provider Manual" },
+    { src: "/images/first-aid1.png", alt: "First Aid Kit" },
+    { src: "/images/safety.png", alt: "Health Safety Environment" },
+    { src: "/images/heart.png", alt: "Anatomical Heart Study" }
   ];
 
   const specializationList = [
@@ -20,7 +20,7 @@ export default function Home() {
     {
       title: "Digital Services",
   …
-[18:56, 28/03/2026] Apex Technical group and training: import Image from 'next/image';
+import Image from 'next/image';
 import Link from 'next/link';
 
 export default function ThankYou() {
@@ -29,7 +29,7 @@ export default function ThankYou() {
       {/* Success Icon or Logo */}
       <div className="mb-8">
         <Image 
-          src="/images/117147.png" 
+          src="/images/logo.png" 
           alt="Apex Technical Group Logo" 
           width={180} 
           height={100} 

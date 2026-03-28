@@ -51,7 +51,7 @@ export default function Services() {
         },
         {
             title: "Medical Aid Claims Assistance",
-            icon: "🧠",
+            icon: "📁",
             items: [
                 "Professional Medical Billing Support",
                 "Holistic support focusing on administrative accuracy and efficient claim processing for emergency medical services.",
