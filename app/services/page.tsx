@@ -58,8 +58,8 @@ export default function Services() {
                 "Guidance on documentation and compliance for medical claims."
             ],
             description: "Navigating the complexities of medical aid claims."
-        }
-    ];
+        } //
+    ]; // <---
 
     return (
         <main className="min-h-screen bg-slate-50 py-16 px-6">
