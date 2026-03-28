@@ -10,17 +10,6 @@ export default function ThankYou() {
     { src: "/images/heart.png", alt: "Anatomical Heart Study" }
   ];
 
-  const specializationList = [
-    {
-      title: "First Aid Training",
-      items: ["Level 1-3", "BLS (Basic Life Support)", "Family and Friends"]
-    },
-    {
-      title: "Health and Safety",
-      items: ["Basic OHS Training", "Fire Fighting", "Risk Assessment"]
-    }
-  ];
-
   return (
     <main className="min-h-screen bg-white flex flex-col items-center justify-center p-6 text-center">
       <div className="max-w-2xl w-full space-y-8">
@@ -51,14 +40,14 @@ export default function ThankYou() {
           ))}
         </div>
 
-        {/* WhatsApp & Home Actions */}
+        {/* Action Buttons */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
           <Link 
             href="https://wa.me/27789238510" 
             target="_blank"
             className="bg-green-500 hover:bg-green-600 text-white px-8 py-3 rounded-lg font-semibold transition-colors flex items-center justify-center gap-2"
           >
-            <span>Chat on WhatsApp</span>
+            Chat with Millicent
           </Link>
           <Link 
             href="/" 
