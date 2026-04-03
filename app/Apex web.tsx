@@ -98,7 +98,7 @@ export default function Home() {
       <section className="max-w-6xl w-full py-20 px-6">
         <h2 className="text-2xl font-bold text-slate-800 mb-8 text-center uppercase tracking-widest">Training Resources & Media</h2>
         <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-          {["/images/safety.png", "/images/bls-manual.png", "/images/first-aid1.png", "/images/first-aid2.png", "/images/we-can-do-it.png", "/images/psychology.png"].map((src, i) => (
+          {["/images/Safety-Off.png", "/images/bls-manual.png", "/images/first-aid1.png", "/images/first-aid2.png", "/images/we-can-do-it.png", "/images/psychology.png"].map((src, i) => (
             <div key={i} className="relative aspect-video rounded-xl overflow-hidden border border-slate-200 bg-slate-50 shadow-sm hover:shadow-md transition-all">
               <Image src={src} alt="Apex Training" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-contain p-2" />
             </div>

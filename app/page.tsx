@@ -4,7 +4,7 @@ export default function Home() {
   const trainingGallery = [
     { src: "/images/bls-manual.png", alt: "BLS Provider Manual" },
     { src: "/images/first-aid1.png", alt: "First Aid Kit" },
-    { src: "/images/safety.png", alt: "Health Safety Environment" },
+    { src: "/images/Safety-Off.png", alt: "Health Safety Environment" },
     { src: "/images/heart.png", alt: "Anatomical Heart Study" }
   ];
 
